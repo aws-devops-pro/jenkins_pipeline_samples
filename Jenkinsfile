@@ -9,7 +9,7 @@ node {
     stage('Test') {
         echo " Test Job is successfull"
     }
-    stage('Monitor') {
+    stage('Monitor1') {
         echo " Monitor Job is successfull"
     }
 
