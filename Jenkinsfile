@@ -1,5 +1,5 @@
 node {
-
+echo 'Pulling...' + env.BRANCH_NAME
 if (env.BRANCH_NAME == "develop") {
    stage ('Deploy into Dev env') {
 	echo " Deploy into Dev Env"
