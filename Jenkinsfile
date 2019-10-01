@@ -1,16 +1,17 @@
 node {
- 
-    stage('Build') {
-        echo "Build Job is Successfull"
-    }  
-    stage('Deploy') {
-        echo " Deploy Job is successfull"
-    }
-    stage('Test') {
-        echo " Test Job is successfull"
-    }
-    stage('Monitor') {
-        echo " Monitor Job is successfull"
-    }
+
+if (env.BRANCH_NAME == "develop") {
+   stage ('Deploy into Dev env') {
+	echo " Deploy into Dev Env"
+}
+
+}
+
+if (env.BRANCH_NAME == "master") {
+   stage ('Deploy into INT env') {
+        echo " Deploy into INT Env"
+}
+
+} 
 
 }
