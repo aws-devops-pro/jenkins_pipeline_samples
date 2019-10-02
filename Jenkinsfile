@@ -1,6 +1,6 @@
 node {
 //echo 'Pulling...' + env.BRANCH_NAME
-echo 'Pulling... ' + env.GIT_BRANCH
+//echo 'Pulling... ' + env.GIT_BRANCH
 if (env.BRANCH_NAME == "develop") {
 	stage ('Build The Env') {
 	echo " Building the Dev env"
@@ -25,6 +25,9 @@ if (env.BRANCH_NAME == "master") {
    stage ('Deploy into INT env') {
         echo " Deploy into INT Env"
 }
+		stage ('test in INT Encv') {
+			echo "Test in iNT Env"
+		}
 
 } 
 
