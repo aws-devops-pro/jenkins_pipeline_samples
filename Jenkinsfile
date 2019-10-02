@@ -2,7 +2,7 @@ properties([parameters([string(defaultValue: '', description: 'Name of the proje
 node {
 
   stage(' Parameter pass') {
-        sh label: '', script: 'echo "the parameter passed is ${params.Name} "'
+        //sh label: '', script: 'echo "the parameter passed is ${params.Name} "'
         sh " the parameter passed is : ${params.Name} "
   }
 
