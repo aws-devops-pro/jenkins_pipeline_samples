@@ -2,7 +2,7 @@ node {
 	
 if (env.BRANCH_NAME == "develop") {
 	stage ('Build The Env') {
-	echo " Building the Dev env
+	echo " Building the Dev env"
 	}
    stage ('Deploy into Dev env') {
 	echo " Deploy into Dev Env"
