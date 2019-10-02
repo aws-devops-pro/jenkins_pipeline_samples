@@ -21,5 +21,11 @@ if (env.BRANCH_NAME == "master") {
 }
 
 } 
+	if (env.BRANCH_NAME == "release") {
+   stage ('Deploy into INT env') {
+        echo " Deploy into INT Env"
+}
+
+} 
 
 }
